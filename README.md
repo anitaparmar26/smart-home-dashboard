@@ -28,7 +28,7 @@ or npm install or yarn install
 Start the development server:
 
 ```bash
-or npm run dev or yarn dev
+npm run dev or yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the dashboard.
