@@ -1,0 +1,49 @@
+"use client"
+
+import Link from "next/link"
+import { useState } from "react"
+
+export default function SignInPage() {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
+  return (
+    <main className="min-h-[80dvh] flex items-center justify-center p-6">
+      <div className="w-full max-w-sm rounded-2xl bg-card p-6 ring-1 ring-border">
+        <h1 className="text-2xl font-semibold text-foreground mb-2 text-balance">Sign in</h1>
+        <p className="text-sm text-muted-foreground mb-6">Welcome back. Enter your credentials.</p>
+        <form className="grid gap-4">
+          <label className="grid gap-2">
+            <span className="text-sm text-muted-foreground">Email</span>
+            <input
+              type="email"
+              className="h-10 rounded-md bg-background ring-1 ring-border px-3 outline-none"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+            />
+          </label>
+          <label className="grid gap-2">
+            <span className="text-sm text-muted-foreground">Password</span>
+            <input
+              type="password"
+              className="h-10 rounded-md bg-background ring-1 ring-border px-3 outline-none"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+            />
+          </label>
+          <button type="button" className="h-10 rounded-md bg-[hsl(var(--brand))] text-background">
+            Sign in
+          </button>
+        </form>
+        <p className="mt-4 text-sm text-muted-foreground">
+          Don’t have an account?{" "}
+          <Link href="/signup" className="text-[hsl(var(--brand))]">
+            Sign up
+          </Link>
+        </p>
+      </div>
+    </main>
+  )
+}
