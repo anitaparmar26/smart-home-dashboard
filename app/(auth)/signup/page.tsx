@@ -2,11 +2,13 @@
 
 import Link from "next/link"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [name, setName] = useState("")
+  const router = useRouter()
 
   return (
     <main className="min-h-[80dvh] flex items-center justify-center p-6">
@@ -44,16 +46,19 @@ export default function SignUpPage() {
               placeholder="••••••••"
             />
           </label>
-          <button type="button" className="h-10 rounded-md bg-[hsl(var(--brand))] text-background">
+          <button type="button" className="h-10 rounded-md bg-brand text-background">
             Sign up
           </button>
         </form>
-        <p className="mt-4 text-sm text-muted-foreground">
+
+        <p className="mt-4 mb-2 text-sm text-muted-foreground">
           Already have an account?{" "}
-          <Link href="/signin" className="text-[hsl(var(--brand))]">
+          <Link href="/signin" className="text-brand">
             Sign in
           </Link>
+
         </p>
+        <Link href="/dashboard" className="text-brand text-sm">Back to Dashboard</Link>
       </div>
     </main>
   )

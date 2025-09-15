@@ -34,13 +34,13 @@ export function ToggleSwitch({
         onClick={() => onCheckedChange(!checked)}
         onKeyDown={handleKeyDown}
         className={`relative inline-flex h-7 w-12 items-center rounded-full transition-colors outline-none ring-1 ring-inset ring-border focus-visible:ring-2 focus-visible:ring-ring ${
-          checked ? "bg-[hsl(var(--brand))]" : "bg-muted"
+          checked ? "bg-brand" : "bg-muted"
         }`}
       >
         <span
           className={`absolute left-0.5 top-0.5 size-[22px] rounded-full shadow-sm transition-transform ${
             checked ? "translate-x-5.5" : "translate-x-0"
-          } ${checked ? "bg-white dark:bg-white" : "bg-card dark:bg-foreground"}`}
+          } ${checked ? "bg-muted dark:bg-white" : "bg-card dark:bg-foreground"}`}
         />
         <span className="sr-only">{checked ? "On" : "Off"}</span>
       </button>

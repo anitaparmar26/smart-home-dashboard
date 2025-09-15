@@ -33,16 +33,17 @@ export default function SignInPage() {
               placeholder="••••••••"
             />
           </label>
-          <button type="button" className="h-10 rounded-md bg-[hsl(var(--brand))] text-background">
+          <button type="button" className="h-10 rounded-md bg-brand text-background">
             Sign in
           </button>
         </form>
-        <p className="mt-4 text-sm text-muted-foreground">
+        <p className="mt-4 mb-3 text-sm text-muted-foreground">
           Don’t have an account?{" "}
-          <Link href="/signup" className="text-[hsl(var(--brand))]">
+          <Link href="/signup" className="text-brand">
             Sign up
           </Link>
         </p>
+        <Link href="/dashboard" className="text-brand text-sm">Back to Dashboard</Link>
       </div>
     </main>
   )

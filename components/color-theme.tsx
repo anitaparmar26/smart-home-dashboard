@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react"
 
 const BRANDS = [
-  { key: "purple", label: "Purple", color: "oklch(0.61 0.24 300)" },
-  { key: "blue", label: "Blue", color: "oklch(0.65 0.17 240)" },
-  { key: "teal", label: "Teal", color: "oklch(0.7 0.12 180)" },
-  { key: "orange", label: "Orange", color: "oklch(0.73 0.19 60)" },
-  { key: "pink", label: "Pink", color: "oklch(0.71 0.28 360)" },
+  { key: "purple", label: "Purple", color: "hsl(262, 83%, 58%)" },
+  { key: "blue", label: "Blue", color: "hsl(220, 90%, 56%)" },
+  { key: "teal", label: "Teal", color: "hsl(174, 63%, 45%)" },
+  { key: "orange", label: "Orange", color: "hsl(32, 100%, 50%)" },
+  { key: "pink", label: "Pink", color: "hsl(320, 72%, 66%)" },
 ] as const
 
 export function ColorThemePicker() {
