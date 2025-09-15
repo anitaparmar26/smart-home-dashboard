@@ -21,14 +21,14 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/anitaparmar26/smart-home-dashboard.git
 cd smart-home-dashboard
-pnpm install # or npm install or yarn install
+or npm install or yarn install
 ```
 
 ### Running Locally
 Start the development server:
 
 ```bash
-pnpm dev # or npm run dev or yarn dev
+or npm run dev or yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the dashboard.
@@ -36,7 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 ### Building for Production
 
 ```bash
-pnpm build # or npm run build or yarn build
+npm run build or yarn build
 ```
 
 ### Deployment
