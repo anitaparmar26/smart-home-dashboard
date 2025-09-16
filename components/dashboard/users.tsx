@@ -5,7 +5,7 @@ export function UsersWidget() {
     <section className="rounded-2xl bg-card p-5 shadow-sm ring-1 ring-border">
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-sm font-semibold text-foreground">Users</h3>
-        <span className="text-[10px] text-muted-foreground">Edit▾</span>
+
       </div>
       <div className="flex items-center gap-4">
         {["U1", "U2", "U3"].map((t) => (

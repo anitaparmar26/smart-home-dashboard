@@ -57,7 +57,7 @@ export function Sidebar() {
       <div className="flex items-center justify-between gap-2 px-4 py-5">
         <div className="flex items-center gap-2">
           <div className="size-9 rounded-xl bg-white/20 grid place-items-center font-bold">SH</div>
-          <span className={`${open ? "block" : "hidden"} text-lg font-semibold`}>Smart Home</span>
+          <span className={`${open ? "block" : "hidden"} text-sm font-semibold`}>Smart Home</span>
         </div>
         <button
           aria-label={open ? "Collapse sidebar" : "Expand sidebar"}

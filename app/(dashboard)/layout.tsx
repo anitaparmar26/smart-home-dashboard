@@ -15,7 +15,7 @@ export default function DashboardLayout({
   return (
     <div className="bg-background">
       <div className="mx-auto  px-2 py-3 sm:px-4 sm:py-6">
-        <div className="rounded-3xl bg-card shadow-sm ring-1 ring-border">
+        <div className="rounded-3xl bg-card shadow-sm ring-1 ring-border overflow-hidden">
           {sidebarOpen && (
             <div className="fixed inset-0 bg-black/50 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} />
           )}
@@ -31,7 +31,7 @@ export default function DashboardLayout({
               <Sidebar onClose={() => setSidebarOpen(false)} />
             </div>
 
-            <main className="flex-1 w-full lg:w-auto rounded-b-3xl lg:rounded-r-3xl lg:rounded-bl-none bg-muted p-3 sm:p-5 md:p-7 overflow-auto">
+            <main className="flex-1 w-full lg:w-auto rounded-b-3xl lg:rounded-r-3xl lg:rounded-bl-none bg-muted p-3 sm:p-5 md:px-7 md:py-7 xl:pb-7 xl:pt-0 overflow-auto">
               <Topbar onMenuClick={() => setSidebarOpen(true)} />
               {children}
             </main>

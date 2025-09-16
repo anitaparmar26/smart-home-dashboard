@@ -18,7 +18,7 @@ export function ConsumptionChart() {
     <section className="min-w-0 rounded-2xl bg-card p-5 shadow-sm ring-1 ring-border">
       <div className="mb-4 flex items-center justify-between">
         <h3 className="text-sm font-semibold text-foreground dark:text-muted-foreground">Consumption</h3>
-        <span className="text-[10px] text-muted-foreground">More Info▾</span>
+
       </div>
       <div className="h-64 w-full">
         <ResponsiveContainer width="100%" height="100%">

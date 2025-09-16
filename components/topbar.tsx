@@ -22,8 +22,8 @@ export function Topbar({ onMenuClick }: TopbarProps) {
   const [q, setQ] = useState("")
 
   return (
-    <header className="sticky top-0 z-30 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-      <div className="h-14 px-4 md:px-6 flex items-center justify-between gap-3">
+    <header className="lg:-mx-7 sticky top-0 z-30 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border mb-6 rounded-xl lg:rounded-none">
+      <div className="h-16 px-4 md:px-7  flex items-center justify-between gap-3">
         <button
           onClick={onMenuClick}
           className="lg:hidden rounded-full p-2 hover:bg-muted focus:outline-none focus:ring-2"

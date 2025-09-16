@@ -35,7 +35,7 @@ export function MainDashboard() {
             <div className="rounded-2xl bg-card p-5 shadow-sm ring-1 ring-border">
               <div className="mb-3 flex items-center justify-between">
                 <h2 className="text-sm font-semibold text-foreground">Popular Devices</h2>
-                <span className="text-[10px] text-muted-foreground">Edit▾</span>
+
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <DeviceCard title="Refrigerator" icon="fridge" />
@@ -47,7 +47,7 @@ export function MainDashboard() {
             <div className="rounded-2xl bg-card p-5 shadow-sm ring-1 ring-border">
               <div className="mb-3 flex items-center justify-between">
                 <h2 className="text-sm font-semibold text-foreground">Scene</h2>
-                <span className="text-[10px] text-muted-foreground">Edit▾</span>
+
               </div>
               <Scenes />
             </div>
