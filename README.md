@@ -21,14 +21,14 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/anitaparmar26/smart-home-dashboard.git
 cd smart-home-dashboard
-or npm install or yarn install
+pnpm install or npm install or yarn install
 ```
 
 ### Running Locally
 Start the development server:
 
 ```bash
-or npm run dev or yarn dev
+pnpm or npm run dev or yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the dashboard.
@@ -36,7 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 ### Building for Production
 
 ```bash
-npm run build or yarn build
+pnpm or npm run build or yarn build
 ```
 
 ### Deployment
@@ -47,4 +47,8 @@ Feel free to customize and extend the dashboard for your own smart home needs!
 
 ## Author
 
+<<<<<<< HEAD
 - [Anita Parmar](https://github.com/anitaparmar26)
+=======
+- [Anita Parmar](https://github.com/anitaparmar26)
+>>>>>>> 7c035eb978dad467bee71a6b6fe9b24d0095c418
