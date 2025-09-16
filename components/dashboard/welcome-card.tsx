@@ -20,7 +20,7 @@ export function WelcomeCard() {
         <div className="relative">
           <div className="relative h-32 w-48 md:h-36 md:w-56">
             <Image
-              src="/images/smart-home-reference.png"
+              src="./images/smart-home-reference.png"
               alt="Smart home illustration"
               fill
               className="rounded-2xl object-cover opacity-90"

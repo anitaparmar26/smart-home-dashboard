@@ -1,6 +1,6 @@
 "use client"
 
-import { Bell, Search, Settings, User } from "lucide-react"
+import { Bell, Search, Settings, User, Menu } from "lucide-react"
 import { useState } from "react"
 import {
   DropdownMenu,
@@ -14,12 +14,24 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { ColorThemePicker } from "@/components/color-theme"
 
-export function Topbar() {
+interface TopbarProps {
+  onMenuClick?: () => void
+}
+
+export function Topbar({ onMenuClick }: TopbarProps) {
   const [q, setQ] = useState("")
 
   return (
-    <header className="mb-6 sticky top-0 z-30 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 rounded-xl">
-      <div className="h-14 px-4 md:pr-4 flex items-center justify-between gap-3">
+    <header className="sticky top-0 z-30 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+      <div className="h-14 px-4 md:px-6 flex items-center justify-between gap-3">
+        <button
+          onClick={onMenuClick}
+          className="lg:hidden rounded-full p-2 hover:bg-muted focus:outline-none focus:ring-2"
+          aria-label="Open menu"
+        >
+          <Menu className="size-5" />
+        </button>
+
         {/* Search */}
         <div className="flex-1 max-w-xl">
           <label className="relative block">
