@@ -47,8 +47,4 @@ Feel free to customize and extend the dashboard for your own smart home needs!
 
 ## Author
 
-<<<<<<< HEAD
 - [Anita Parmar](https://github.com/anitaparmar26)
-=======
-- [Anita Parmar](https://github.com/anitaparmar26)
->>>>>>> 7c035eb978dad467bee71a6b6fe9b24d0095c418

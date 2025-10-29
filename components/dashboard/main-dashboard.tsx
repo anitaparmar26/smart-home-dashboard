@@ -72,6 +72,7 @@ export function MainDashboard() {
       </div>
 
       <LightPanels />
+
     </div>
   )
 }
