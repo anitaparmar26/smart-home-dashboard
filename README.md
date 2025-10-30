@@ -45,6 +45,8 @@ You can deploy this app to Vercel, Netlify, or GitHub Pages. For GitHub Pages, m
 ---
 Feel free to customize and extend the dashboard for your own smart home needs!
 
-## Author
+## Contributor
+
+- [Codescandy](https://codescandy.com/)
 
 - [Anita Parmar](https://github.com/anitaparmar26)
