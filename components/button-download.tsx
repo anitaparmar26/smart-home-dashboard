@@ -5,7 +5,7 @@
       return (
         <div className="absolute end-0 bottom-0 p-6 m-6">
           <a
-            href="https://codescandy.com/"
+            href="https://codescandy.com/template/smart-home-dashboard-template/"
             target="_blank"
             className="h-10 rounded-md bg-brand text-background inline-flex items-center gap-2 px-4"
           >
